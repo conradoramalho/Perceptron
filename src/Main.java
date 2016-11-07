@@ -26,18 +26,18 @@ public class Main {
         int saidasEsperadas[] = {0,1,0,1,0,1,0,1,1,1,0,0,1,0,1,0};
 
         perceptron.TreinarPerceptron(entradasEnsinar, saidasEsperadas,16);
-        System.out.println(perceptron.SaidaY(new int[]{1,1,0,1,0,0,1,0}));//210
-        System.out.println(perceptron.SaidaY(new int[]{0,0,0,0,0,1,0,0}));//4
-        System.out.println(perceptron.SaidaY(new int[]{0,1,1,0,0,1,0,0}));//100
-        System.out.println(perceptron.SaidaY(new int[]{1,0,0,1,0,0,1,0}));//146
+        System.out.println(perceptron.Resposta(new int[]{1,1,0,1,0,0,1,0}));//210
+        System.out.println(perceptron.Resposta(new int[]{0,0,0,0,0,1,0,0}));//4
+        System.out.println(perceptron.Resposta(new int[]{0,1,1,0,0,1,0,0}));//100
+        System.out.println(perceptron.Resposta(new int[]{1,0,0,1,0,0,1,0}));//146
         System.out.println("------------------");
-        System.out.println(perceptron.SaidaY(new int[]{0,0,1,0,0,1,0,1}));//37
-        System.out.println(perceptron.SaidaY(new int[]{1,0,0,0,0,0,0,1}));//129
-        System.out.println(perceptron.SaidaY(new int[]{1,1,1,0,0,1,1,1}));//231
-        System.out.println(perceptron.SaidaY(new int[]{0,0,0,0,0,0,1,1}));//3
+        System.out.println(perceptron.Resposta(new int[]{0,0,1,0,0,1,0,1}));//37
+        System.out.println(perceptron.Resposta(new int[]{1,0,0,0,0,0,0,1}));//129
+        System.out.println(perceptron.Resposta(new int[]{1,1,1,0,0,1,1,1}));//231
+        System.out.println(perceptron.Resposta(new int[]{0,0,0,0,0,0,1,1}));//3
         System.out.println("------------------");
-        System.out.println(perceptron.SaidaY(new int[]{1,1,1,1,1,1,1,1}));//255
-        System.out.println(perceptron.SaidaY(new int[]{0,0,0,0,0,0,0,0}));//0
+        System.out.println(perceptron.Resposta(new int[]{1,1,1,1,1,1,1,1}));//255
+        System.out.println(perceptron.Resposta(new int[]{0,0,0,0,0,0,0,0}));//0
 
     }
 	
